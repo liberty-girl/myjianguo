@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>坚果官方商城 - 坚果J系列、坚果G系列、坚果C系列、激光电视、坚果投影仪、坚果智能影院官方网站</title>
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- header -->
+	<div id="header1">
+	</div>
+	<!-- 轮播图 -->
+	<div id="lunbo">
+	</div>
+	<!-- 激光电视 -->
+	<div class="jgtv">
+		<div class="jgtvmain">
+			<h3 id="biaoti">激光电视<a href="#" class="more">查看更多>></a></h3>
+		</div>
+	</div>
+	<!-- 坚果投影 -->
+	<div class="jgty">
+		<div class="jgtymain">
+			<h3 id="biaoti">坚果投影<a href="#" class="more">查看更多>></a></h3>
+		</div>
+	</div>
+	<!-- 坚果配件 -->
+	<div class="jgpj">
+		<div class="jgpjmain">
+			<h3 id="biaoti">坚果配件<a href="#" class="more">查看更多>></a></h3>
+		</div>
+	</div>
+	<!-- 获奖项目 -->
+	<div class="hjxm">
+		<div class="hjxmmain">
+			<h3 id="biaoti">获奖项目</h3>
+			<img src="img/hjxm.jpg" alt="">
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer1"></div>
+
+	<!-- 注册页面 -->
+	
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/navhover.js"></script>
+<script src="js/move1908.js" ></script>
+<script src="js/banner02.js" ></script>
+<script src="js/ulmain.js"></script>
+<script>
+
+
+$(document).ready(function(){
+
+	$("#header1").load("header.html");
+	$("#footer1").load("footer.html");
+	
+	new Banner(
+        $("#lunbo")[0],
+        {
+            imgs:["img/lunbo1.jpg","img/lunbo2.jpg","img/lunbo3.jpg","img/lunbo4.jpg","img/lunbo5.jpg"],
+            as:["http://www.baidu.com","http://www.weibo.com","http://www.jc2006.com/","http://www.bshare.cn/","https://gitee.com/"],
+            douSize:10,
+            douColor:"#ccc",
+            douHighColor:"#fff"
+        }
+    );
+	let ul1 = new UlMain(
+		$(".jgtvmain")[0],
+		{
+			imgs:["img/jgdsa1.jpg","img/jgtva1.jpg","img/jgtva2.jpg","img/jgtva3.jpg","img/jgtva4.jpg"],
+			name:["","坚果SA&100寸菲涅尔硬屏","坚果SA&100寸菲涅尔硬屏","坚果SA&100寸菲涅尔硬屏","坚果SA&100寸菲涅尔硬屏"],
+			cheap:["","赠送抗光幕布安装服务和两副3D眼镜","赠送抗光幕布安装服务和两副3D眼镜","赠送抗光幕布安装服务和两副3D眼镜","赠送抗光幕布安装服务和两副3D眼镜"],
+			price1:["","27998.00元","27998.00元","27998.00元","27998.00元"],
+			price2:["","32998.00元","32998.00元","32998.00元","32998.00元"],
+			hot:["","精品","精品","精品","精品"],
+			height: 284
+		}
+	);
+	let ul2 = new UlMain(
+		$(".jgtymain")[0],
+		{
+			imgs:["img/jgtya1.jpg","img/jgtya0.jpg","img/jgtya2.jpg","img/jgtya3.jpg","img/jgtya4.jpg","img/jgtya5.jpg","img/jgtya6.jpg","img/jgtya7.jpg","img/jgtya8.jpg"],
+			name:["","坚果·微果i6","坚果·微果i6","坚果·微果i6","坚果·微果i6","坚果·微果i6","坚果·微果i6","坚果·微果i6","坚果·微果i6"],
+			cheap:["","千元级迷你便携投影 巴掌大小方便携带","千元级迷你便携投影 巴掌大小方便携带","千元级迷你便携投影 巴掌大小方便携带","千元级迷你便携投影 巴掌大小方便携带","千元级迷你便携投影 巴掌大小方便携带","千元级迷你便携投影 巴掌大小方便携带","千元级迷你便携投影 巴掌大小方便携带","千元级迷你便携投影 巴掌大小方便携带"],
+			price1:["","1699.00元","1699.00元","1699.00元","1699.00元","1699.00元","1699.00元","1699.00元","1699.00元"],
+			price2:["","1999.00元","1999.00元","1999.00元","1999.00元","1999.00元","1999.00元","1999.00元","1999.00元"],
+			hot:["","新品","新品","新品","新品","热销","新品","热销","精品"],
+			height: 582
+		}
+	);
+	let ul3 = new UlMain(
+		$(".jgpjmain")[0],
+		{
+			imgs:["img/jgpja1.jpg","img/jgpja2.jpg","img/jgpja3.jpg","img/jgpja4.jpg","img/jgpja5.jpg"],
+			name:["","100寸简易幕布PJM002-H01 ","100寸简易幕布PJM002-H01 ","100寸简易幕布PJM002-H01 ","100寸简易幕布PJM002-H01 "],
+			cheap:["","16:9黄金比例 收卷方便 轻松携带","16:9黄金比例 收卷方便 轻松携带","16:9黄金比例 收卷方便 轻松携带","16:9黄金比例 收卷方便 轻松携带"],
+			price1:["","149.00元","149.00元","149.00元","149.00元"],
+			price2:["","159.00元","159.00元","159.00元","159.00元"],
+			hot:["","热销","精品","热销","新品"],
+			height: 284
+		}
+	);
+	let ul4 = new UlMain(
+		$(".jgpjmain")[0],
+		{
+			imgs:["img/jgpjb1.jpg","img/jgpjb2.jpg","img/jgpjb3.jpg","img/jgpjb4.jpg","img/jgpjb5.jpg"],
+			name:["","100寸简易幕布PJM002-H01 ","100寸简易幕布PJM002-H01 ","100寸简易幕布PJM002-H01 ","100寸简易幕布PJM002-H01 "],
+			cheap:["","16:9黄金比例 收卷方便 轻松携带","16:9黄金比例 收卷方便 轻松携带","16:9黄金比例 收卷方便 轻松携带","16:9黄金比例 收卷方便 轻松携带"],
+			price1:["","149.00元","149.00元","149.00元","149.00元"],
+			price2:["","159.00元","159.00元","159.00元","159.00元"],
+			hot:["","热销","精品","热销","热销"],
+			height: 284
+		}
+	);
+	
+
+});
+
+</script>
