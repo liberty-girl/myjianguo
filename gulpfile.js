@@ -2,10 +2,15 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const minifycss = require("gulp-minify-css");
 const imagemin = require("gulp-imagemin");
+const connect = require("gulp-connect");
 // const uglify=require("gulp-uglify");
 
 
-
+gulp.task("server",function(){
+	connect.server({
+		root:"dist"
+	});
+})
 gulp.task('copy',async ()=>{
 	gulp.src("./**/*")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo"));

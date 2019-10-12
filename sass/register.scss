@@ -5,3 +5,159 @@ body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,input,td,textarea{
 	margin: 0;
 	padding: 0;
 }
+
+a{
+	color: #757575;
+	text-decoration: none;
+	&:hover{
+		color: #757575;
+		text-decoration: none;
+	}
+}
+ul,ol,li{
+	list-style: none;
+}
+img{
+	border: none;
+	display: block;
+}
+input{
+	outline: none;
+}
+body{
+	height: 100%;
+	font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial,  "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.register{
+	width: 100%;
+	height: 100%;
+	background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+	bottom:0;
+	input{
+		z-index: 1;
+		width: 338px;
+		height: 43px;
+		padding: 0 10px;
+		line-height: 43px;
+		border: solid 1px #dadada;
+		color: #bbb;
+		font-size: 14px;
+		background: transparent;
+	}
+	p{
+		position: relative;
+		z-index: 1;
+		margin-top: 10px;
+	}
+}
+.registermain{
+	position: fixed;
+    z-index: 1;
+	top: 50%;
+    left: 50%;
+	width: 360px;
+    margin-left: -240px;
+	margin-top: -251px;
+    padding: 30px 60px;
+    background: #fff;
+	.zhuce{
+		width: 100%;
+	    height: 45px;
+	    line-height: 45px;
+	    text-align: center;
+	    color: #fff;
+	    font-size: 20px;
+	    background: #cf1d1b;
+	    border: none;
+		cursor: pointer;
+	}
+}
+.close{
+	position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #c8c8c8;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+	.icon-chahao{
+		font-size:28px;
+		font-weight:0;
+	}
+}
+
+.zcbt{
+	text-align: center;
+    line-height: 22px;
+    font-size: 18px;
+}
+.yzm{
+	position: relative;
+	img{
+		position: absolute;
+	    right: 5px;
+	    top: 5px;
+	    width: 80px;
+	    height: 33px;
+	    display: block;
+	}
+}
+.phone{
+	position: relative;
+	button{
+		position: absolute;
+		z-index: 2;
+		right: 0;
+		top: 5px;
+		width: 127px;
+		height: 35px;
+		line-height: 35px;
+		border: 0;
+		outline: none;
+		border-left: solid 1px #dadada;
+		text-align: center;
+		font-size: 12px;
+		background: none;
+		color: #777;
+		cursor: pointer;
+	}
+}
+.agreement{
+	font-size: 14px;
+	color:#6a6969;
+	padding: 10px 0 10px;
+	label{
+		a{
+			color: #cf1d1b;
+		}
+	} 
+}
+#agree{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	text-align:center;
+	line-height:18px;
+	border: solid 1px #dadada;
+	background: transparent;
+	position:relative;
+	.icon-duihao{
+		font-size:26px;
+		color: #cf1d1b;
+		font-weight:bold;
+		position:absolute;
+		top:0px;
+		left:-4px;
+	}
+}
+.ceshi::-webkit-input-placeholder {
+    color: #bbb;
+}
