@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>header</title>
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+	<div class="header">
+		<div class="headermain">
+			<div class="header_left">
+				<a href="#">坚果商城</a>
+				<a href="#">行业定制</a>
+				<a href="#">坚果应用</a>
+				<a href="#">坚果论坛</a>
+			</div>
+			<div class="header_right">
+				<a href="#">
+					<span class="iconfont icon-gwc"></span>
+					<span>购物车</span><span>（0）</span>
+				</a>
+			</div>
+			<div class="header_middle">
+				<a href="#">登录</a><span>|</span>
+				<a href="#">注册</a><span>|</span>
+				<a href="#">English</a>
+			</div>
+		</div>
+	</div>
+	<!-- nav -->
+	<div class="nav">
+		<div class="navmain">
+			<a href="#" class="logo"></a>
+			<div id="nav_middle">
+				<a href="#" class="navm">家庭投影</a>
+				<div class="navhover" style="display: none;">
+					<div class="navhovermain"></div>
+				</div>
+				<a href="#" class="navm">移动投影</a>
+				<div class="navhover" style="display: none;">
+					<div class="navhovermain"></div>
+				</div>
+				<a href="#" class="navm">激光电视</a>
+				<div class="navhover" style="display: none;">
+					<div class="navhovermain"></div>
+				</div>
+				<a href="#" class="navm">行业定制</a>
+				<div class="navhover" style="display: none;">
+					<div class="navhovermain"></div>
+				</div>
+				<a href="#" class="navm">坚果配件</a>
+				<div class="navhover" style="display: none;">
+					<div class="navhovermain"></div>
+				</div>
+				<a href="#" class="navm">坚果服务</a>
+			</div>
+			<div class="nav_right">
+				<a href="#" class="sousuo"><button class="btn btn-default" type="submit"><span class="iconfont icon-sousuo"></span></button>
+				</a>
+				<input type="text" placeholder="输入商品名称搜索">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/navhover.js"></script>
+<script>
+	$(document).ready(function(){
+		let h0 = new Navhover(
+			$(".navhovermain")[0],
+			{
+				hot:["新品","新品","新品","热销","精品","热销"],
+				imgs:["img/jtty1.jpg","img/jtty2.jpg","img/jtty3.jpg","img/jtty4.jpg","img/jtty5.jpg","img/jtty6.jpg"],
+				name:["坚果微果H6","坚果J9","坚果J7S","坚果G7","坚果X3","坚果J7"],
+				price:["1899.00元","4599.00元","4399.00元","2848.00元","5999.00元","3999.00元"]
+			}
+		);
+		let h1 = new Navhover(
+			$(".navhovermain")[1],
+			{
+				hot:["新品","新品","热销","新品","精品","新品"],
+				imgs:["img/ydty1.jpg","img/ydty2.jpg","img/ydty3.jpg","img/ydty4.jpg","img/ydty5.jpg","img/ydty6.jpg"],
+				name:["坚果·微果i6","坚果P3","坚果M6","坚果T9","坚果P2","坚果P2（勃艮第红）"],
+				price:["1599.00元","3299.00元","2399.00元","2348.00元","3199.00元","3399.00元"]
+			}
+		);
+		let h2 = new Navhover(
+			$(".navhovermain")[2],
+			{
+				hot:["新品","新品","新品","精品","精品","精品"],
+				imgs:["img/jgds1.jpg","img/jgds2.jpg","img/jgds3.jpg","img/jgds4.jpg","img/jgds5.jpg","img/jgds6.jpg"],
+				name:["坚果S3","坚果S21","坚果U1","坚果SA","坚果S1 Pro","坚果S1"],
+				price:["1899.00元","4599.00元","4399.00元","2848.00元","5999.00元","3999.00元"]
+			}
+		);
+		let h3 = new Navhover(
+			$(".navhovermain")[3],
+			{
+				hot:["新品","新品","新品","热销","精品","热销"],
+				imgs:["img/hydz1.jpg","img/hydz2.jpg","img/hydz3.jpg","img/hydz4.jpg","img/hydz5.jpg"],
+				name:["坚果微果H6","坚果J9","坚果J7S","坚果G7","坚果X3","坚果J7"],
+				price:["1899.00元","4599.00元","4399.00元","2848.00元","5999.00元","3999.00元"]
+			}
+		);
+		let h4 = new Navhover(
+			$(".navhovermain")[4],
+			{
+				hot:["新品","新品","热销","热销","","热销"],
+				imgs:["img/jgpj1.jpg","img/jgpj2.jpg","img/jgpj3.jpg","img/jgpj4.jpg","img/jgpj5.jpg","img/jgpj6.jpg"],
+				name:["坚果微果H6","坚果J9","坚果J7S","坚果G7","坚果X3","坚果J7"],
+				price:["1899.00元","4599.00元","4399.00元","2848.00元","5999.00元","3999.00元"]
+			}
+		);
+	});
+</script>

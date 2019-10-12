@@ -1,0 +1,248 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,input,td,textarea{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: #757575;
+	text-decoration: none;
+}
+a:hover{
+	color: #757575;
+	text-decoration: none;
+}
+ul,ol,li{
+	list-style: none;
+}
+img{
+	border: none;
+	display: block;
+}
+input{
+	outline: none;
+}
+body{
+	font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial,  "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+
+/*footer*/
+.footer{
+	width: 100%;
+    background: #fff;
+}
+.footermain{
+	width: 1190px;
+	margin: 0 auto;
+}
+.footer_top{
+	width: 100%;
+	height: 75px;
+}
+.footer_top ul{
+	overflow: hidden;
+	border-bottom: 1px solid #e0e0e0;
+}
+.footer_top li{
+	width: 236px;
+	height: 25px;
+	float: left;
+	font-size: 16px;
+	text-align: center;
+	line-height: 25px;
+	margin: 25px 0;
+	border-right: 1px solid #e0e0e0;
+}
+.footer_top li:last-child{
+	border-right: none;
+}
+.footer_top a{
+	color: #757575;
+	transition: all .5s;
+}
+.footer_top a:hover{
+	color: #cf211b;
+}
+.footer_top .iconfont{
+	font-size: 25px;
+	vertical-align: -3px;
+    margin-right: 5px;
+}
+.footer_top .icon-hhzc{
+	font-size: 22px;
+}
+.footer_top .icon-rili{
+	font-size: 22px;
+}
+.footer_middle{
+	padding: 40px 0;
+    border-bottom: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+.footer_middle ul{
+	float: left;
+}
+.footer_middle li{
+	float: left;
+	width: 233px;
+    height: 120px;
+}
+.footer_middle li p:first-child{
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+.footer_middle ul p{
+	font-size: 12px;
+    margin-bottom: 8px;
+}
+.info{
+	float: right;
+	width: 245px;
+	height: 120px;
+	text-align: center;
+    border-left: 1px solid #ccc;
+}
+.phone{
+	color: #cf211b;
+    font-size: 22px;
+}
+.time{
+	font-size: 12px;
+    margin-bottom: 10px;
+}
+.online{
+	display: block;
+    font-size: 12px;
+    color: #cf211b;
+    width: 118px;
+    height: 28px;
+    line-height: 30px;
+    border: 1px solid #cf211b;
+    margin: 0 auto;
+    transition: all .5s;
+}
+.online .iconfont{
+	font-size: 14px;
+    margin-right: 5px;
+}
+.online:hover{
+	color: #fff;
+    background: #cf211b;
+}
+.footer_bottom{
+	width: 100%;
+	height: 133px;
+	margin-top: 10px;
+}
+.fb_left{
+	width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    float: left;
+    background: url(../img/red_logo.png) no-repeat center;
+    background-size: 82%;
+}
+.fb_middle{
+	float: left;
+}
+.fb_middle a{
+	height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #222;
+    display: inline-block;
+}
+.fb_middle p{
+	color: #909090;
+    padding: 0 0 10px 10px;
+}
+.fb_middle p a{
+	height: 23px;
+	line-height: 23px;
+}
+.fb_middle p a:last-child{
+	height: 20px;
+	line-height: 20px;
+}
+.fb_middle p a:last-child img{
+	float: left;
+	width:16px;
+	height:16px;
+	margin-right: 0px;
+}
+.fb_right{
+	width: 230px;
+    height: 60px;
+    float: right;
+    text-align: center;
+}
+.fb_right .iconfont{
+	margin: 5px;
+    font-size: 30px;
+    line-height: 60px;
+}
+.fb_right .icon-weixin{
+	font-size: 32px;
+	color: #3fc508;
+}
+.fb_right .icon-weibo{
+	font-size: 28px;
+	color: #f74400;
+}
+.fb_bottom{
+	clear: both;
+	padding-top: 10px;
+}
+.fb_bottom a{
+	display: block;
+	width: 112px;
+	height: 40px;
+	margin: 0 auto;
+}
+.fb_bottom img{
+	width: 112px;
+	height: 40px;
+}
+
+/*右侧固定*/
+.rightgu{
+	width: 60px;
+	background: #fff;
+    box-shadow: 0 0 5px #ccc;
+	position: relative;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 0;
+}
+.rightgu li{
+	width: 55px;
+	height: 60px;
+	font-size: 12px;
+	text-align: center;
+}
+.rightgu .iconfont{
+	display: block;
+	font-size: 24px;
+}
+.rightgu li:hover a{
+	color: #cf211b;
+}
+.rightgu .icon-gwc{
+	font-size: 44px;
+	line-height: 34px;
+}
+.rightgu em{
+	position: absolute;
+    display: inline-block
+    line-height: 16px;
+    border-radius: 50%;
+    top: 120px;
+    right: 16px;
+    font-size: 12px;
+    text-align: center;
+    background: #cf211b;
+    color: #fff;
+    padding: 0 5px;
+    font-style: normal;
+}
