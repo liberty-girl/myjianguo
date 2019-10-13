@@ -26,41 +26,6 @@ body{
 
 
 
-/* .navhovermain li{
-	width: 174px;
-	height: 199px;
-	float: left;
-	text-align: center;
-	padding: 40px 12px 0px 12px;
-	position: relative;
-}
-.navhovermain img{
-	width: 110px;
-	height: 110px;
-	margin: 0 auto;
-}
-.navhovermain p{
-	font-size: 14px;
-    color: #cf211b;
-}
-.hot{
-	display: inline-block;
-	height: 20px;
-	padding: 0 20px;
-	border: 1px solid #cf211b;
-    color: #cf211b;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 50px;
-}
-.navhovermain a{
-	color: #757575;
-}
-.hotbottom{
-	border-right: 1px solid #ccc;
-} */
-
 /* 轮播图*/
 #lunbo{
     position: relative;

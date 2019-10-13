@@ -21,15 +21,19 @@ class Navhover{
 		//一，创建ul
 		this.ul = document.createElement("ul");
 		this.ul.style.cssText = `
-		 	overflow:hidden;
-		 `;
+			width: 1190px;
+			margin: 0 auto;
+			padding-left: 130px;
+			overflow:hidden;
+		`;
 		this.navhoverDom.appendChild(this.ul);
 		//二，创建li
 		let num = this.imgs.length;
 		for(let i=0;i<num;i++){
 			let liDom = document.createElement("li");
 			liDom.style.cssText = `
-				width: 150px;
+				width: 174px;
+				height: 199px;
 				float: left;
 				text-align: center;
 				padding: 40px 12px 0px 12px;
@@ -44,7 +48,6 @@ class Navhover{
 					padding: 0 20px;
 					border: 1px solid #cf211b;
 				    color: #cf211b;
-				    font-size:14px;
 				    position: absolute;
 				    top: 0;
 				    left: 0;

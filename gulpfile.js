@@ -29,11 +29,11 @@ gulp.task("watchall",async ()=>{
 			.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo\\img"));
 		});
 		
-		// gulp.watch("css/*.css",async ()=>{
-		// 	gulp.src("css/*.css")
-		// 	.pipe(minifycss())
-		// 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo\\css"));
-		// });
+		gulp.watch("css/*.css",async ()=>{
+			gulp.src("css/*.css")
+			.pipe(minifycss())
+			.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo\\css"));
+		});
 		
 		gulp.watch("js/*.js", async ()=>{
 			gulp.src("js/*.js")
@@ -46,5 +46,10 @@ gulp.task("watchall",async ()=>{
 			.pipe(sass())
 			.pipe(minifycss())
 			.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo\\css"));
+		});
+
+		gulp.watch("*.php",async ()=>{
+			gulp.src("*.php")
+			.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo"));
 		});
 });

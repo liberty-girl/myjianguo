@@ -13,22 +13,25 @@
 		<div class="registermain">
 			<div class="close"><span class="iconfont icon-chahao"></span></div>
 			<div class="zcbt">注册JmGO账号</div>
-			<p class="yzm">
-				<input type="text" placeholder="输入图片验证码">
-				<img src="https://www.jmgo.com/v3/getvcode.php" alt="">
-			</p>
-			<p class="phone">
-				<input type="text" placeholder="手机号" class="ceshi">
-				<button>获取验证码</button>
-			</p>
-			<p><input type="text" placeholder="输入短信验证码" class="ceshi"></p>
-			<p><input type="password" placeholder="密码" class="ceshi"></p>
-			<p><input type="password" placeholder="确认密码" class="ceshi"></p>
-			<p class="agreement">
-				<span id="agree"><span class="iconfont icon-duihao"></span></span>&nbsp;
-				<label for="agree">我已阅读并接受<a href="http://bbs.jmgo.com/forum.php?mod=viewthread&tid=532">《JmGO用户协议》</a></label>
-			</p>
-			<p><input type="submit" value="注册" class="zhuce"></p>
+			<form action="regSave.php" method="post">
+				<p class="yzm">
+					<input type="text" placeholder="输入图片验证码">
+					<img src="https://www.jmgo.com/v3/getvcode.php" alt="">
+				</p>
+				<p class="phone">
+					<input type="text" placeholder="手机号" class="ceshi" id="phonenum" name="phonenum">
+					<button type="button">获取验证码</button>
+				</p>
+				<p><input type="text" placeholder="输入短信验证码" class="ceshi"></p>
+				<p><input type="password" placeholder="密码" class="ceshi" id="mima1" name="pass"></p>
+				<p><input type="password" placeholder="确认密码" class="ceshi" id="mima2"></p>
+				<p class="jiancha"></p>
+				<p class="agreement">
+					<span id="agree"><span class="iconfont icon-duihao"></span></span>&nbsp;
+					<label for="#agree">我已阅读并接受<a href="http://bbs.jmgo.com/forum.php?mod=viewthread&tid=532">《JmGO用户协议》</a></label>
+				</p>
+				<p><input type="button" value="注册" class="zhuce"></p>
+			</form>
 		</div>
 	</div>
 </body>

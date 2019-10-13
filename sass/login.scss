@@ -1,6 +1,5 @@
 @charset "UTF-8"; //设置支持中文注释
 
-
 body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,input,td,textarea{
 	margin: 0;
 	padding: 0;
@@ -10,7 +9,6 @@ a{
 	color: #757575;
 	text-decoration: none;
 	&:hover{
-		color: #757575;
 		text-decoration: none;
 	}
 }
@@ -29,39 +27,17 @@ body{
 	font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial,  "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 }
 
-.register{
-	width: 100%;
+.login{
+    width: 100%;
 	height: 100%;
 	background: #000;
     position: fixed;
     left: 0;
     top: 0;
 	bottom:0;
-	input{
-		z-index: 1;
-		width: 338px;
-		height: 43px;
-		padding: 0 10px;
-		line-height: 43px;
-		border: solid 1px #dadada;
-		color: #bbb;
-		font-size: 14px;
-		background: transparent;
-	}
-	p{
-		position: relative;
-		z-index: 1;
-		margin-top: 10px;
-	}
-	p:nth-child(4){
-		margin-bottom: 10px;
-	}
-	.agreement{
-		margin-top: 0px;
-	}
 }
-.registermain{
-	position: fixed;
+.loginmain{
+    position: fixed;
     z-index: 1;
 	top: 50%;
     left: 50%;
@@ -70,7 +46,24 @@ body{
 	margin-top: -251px;
     padding: 30px 60px;
     background: #fff;
-	.zhuce{
+    p{
+        position: relative;
+        z-index: 1;
+        margin-top: 10px;
+        input{
+            position: relative;
+            z-index: 1;
+            width: 338px;
+            height: 43px;
+            padding: 0 10px;
+            line-height: 43px;
+            border: solid 1px #dadada;
+            color: #bbb;
+            font-size: 14px;
+            background: transparent;
+        }
+    }
+    .zhuce{
 		width: 100%;
 	    height: 45px;
 	    line-height: 45px;
@@ -80,11 +73,6 @@ body{
 	    background: #cf1d1b;
 	    border: none;
 		cursor: pointer;
-	}
-	.jiancha{
-		color: #f30909;
-		font-size: 14px;
-		display: none;
 	}
 }
 .close{
@@ -104,25 +92,31 @@ body{
 		font-weight:0;
 	}
 }
-
-.zcbt{
-	text-align: center;
+.login_top{
+    text-align: center;
     line-height: 22px;
     font-size: 18px;
-}
-.yzm{
-	position: relative;
-	img{
-		position: absolute;
-	    right: 5px;
-	    top: 5px;
-	    width: 80px;
-	    height: 33px;
-	    display: block;
-	}
+    overflow: hidden;
+    height: 22px;
+    padding-bottom: 18px;
+    li{
+        float: left;
+        width: 50%;
+        height: 18px;
+        line-height: 18px;
+        margin-top: 2px;
+        color: #777;
+        border-left: solid 1px #adadad;
+        margin-left: -1px;
+        cursor: pointer;
+    }
+    li:first-child{
+        color: #cf1d1b;
+    }
 }
 .phone{
-	position: relative;
+    position: relative;
+    display: none;
 	button{
 		position: absolute;
 		z-index: 2;
@@ -141,15 +135,17 @@ body{
 		cursor: pointer;
 	}
 }
+.yzm{
+    display: none;
+}
+.jiancha{
+    color: #f30909;
+    font-size: 14px;
+    display: none;
+}
 .agreement{
 	font-size: 14px;
-	color:#6a6969;
-	padding: 10px 0 10px;
-	label{
-		a{
-			color: #cf1d1b;
-		}
-	} 
+    padding: 10px 0 10px;
 }
 #agree{
 	display:inline-block;
@@ -158,7 +154,7 @@ body{
 	text-align:center;
 	line-height:18px;
 	border: solid 1px #cf1d1b;
-	background: transparent;
+    background: transparent;
 	position:relative;
 	.icon-duihao{
 		font-size:26px;
@@ -169,15 +165,24 @@ body{
 		left:-4px;
 	}
 }
-.ceshi::-webkit-input-placeholder {
-    color: #bbb;
+.login_bottom{
+    padding-top: 19px;
+    .iconfont{
+        float: left;
+        font-size: 36px;
+        color: #ccc;
+        margin-right: 18px;
+    }
+    .icon-weixin-copy{
+        font-size: 40px;
+    }
 }
-.ceshi:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #bbb;
+.forget{
+    float: right;
+    height: 24px;
+    line-height: 30px;
+    color: #cf1d1b;
 }
-.ceshi::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #bbb;
-}
-.ceshi:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #bbb;
+.forget1{
+    line-height: 44px;
 }
