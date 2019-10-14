@@ -14,7 +14,6 @@
 		//3>执行sql语句
 		$sqlstr = "select * from vip where phonenum='$phonenum'";//查询该手机号在数据库中有没有
 		$result = mysql_query($sqlstr,$conn);
-		echo($result);
 		$rows = mysql_num_rows($result);//获取结果的行数
 		if($rows>0){
 			mysql_close($conn);
@@ -27,7 +26,7 @@
 			if($result!=1){
 				echo "0";//注册失败用0
 			}else{
-				echo "-1";//注册成功用1
+				echo "1";//注册成功用1
 			}
 		}
 	}
