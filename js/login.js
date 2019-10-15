@@ -1,5 +1,5 @@
 $(".close").click(function(){
-	$(".login").style.display = "none";
+	$(".login").css("display","none");
 });
 
 let str;
@@ -14,7 +14,7 @@ $(".ceshi").blur(function(){
 	$(this).css("color","#bbb");
 });
 
-let count=0;
+let count=1;
 $("#agree").click(function(){	
 	if(count%2==0){
 		$(this).css("border","solid 1px #ddd");
@@ -26,8 +26,12 @@ $("#agree").click(function(){
 	count++;
 });
 
+$(".forget1").click(function(){
+	$(".login").css("display","none");
+	$(".register").css("display","block");
+});
+
 $(".login_top").children().click(function(){
-	// $(".login_top").children().className = "denglu";
 	let inde = $(".login_top").children().index(this);
 	$(".denglu").attr("class","denglu");
 	$(".denglu").eq(inde).attr("class","denglu denglu1");
@@ -84,7 +88,9 @@ $(".logina").click(function(){
 	var par = `phonenum=${$("#phonenum")[0].value}&pass=${$("#mima1")[0].value}`;
 	$.post("loginCheck.php",par,function($result){
 			if($result=="1"){
-				addCookie("phonenum",$("#phonenum")[0].value,7);//键，值，保存时间
+				if(count%2==0){
+					addCookie("phonenum",$("#phonenum")[0].value,7);//键，值，保存时间
+				}
 				location.href="index.html";
 			}else{
 				$(".jiancha").html("登录失败，账号名或密码错误");
@@ -92,4 +98,15 @@ $(".logina").click(function(){
 			}
 	});
 
+});
+
+$(".sendyzm").click(function(){
+	let str1 = $("#phonenum1")[0].value;
+	let reg1 = /^\d{11}$/;
+	if(str1=="" || reg1.test(str1)==false){
+		$(this).prev().css("border-color","red");
+	}else{
+		$(this).prev().css("border-color","#dadada");
+		sendyzm($(".sendyzm"),$("#phonenum1"),$(".jiancha"),59);
+	}
 });

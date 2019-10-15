@@ -22,8 +22,8 @@
 					</a>
 				</div>
 				<div class="header_middle">
-					<a href="#">登录</a><span>|</span>
-					<a href="#">注册</a><span>|</span>
+					<a href="#" class="zhuyedenglu">登录</a><span>|</span>
+					<a href="#" class="zhuyezhuce">注册</a><span>|</span>
 					<a href="#">English</a>
 				</div>
 			</div>
@@ -67,12 +67,25 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- 登录 -->
+		<div id="loginyin">
+		</div>
+	
+		<!-- 注册 -->
+		<div id="registeryin">
+		</div>
 	</body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/navhover.js"></script>
+<script src="js/login.js"></script>
+<script src="js/cookieTools.js"></script>
+<script src="js/register.js"></script>
 <script>
 	$(document).ready(function(){
+	$("#loginyin").load("login.html");
+		$("#registeryin").load("register.html");
 		let h0 = new Navhover(
 			$(".navhover")[0],
 			{

@@ -32,7 +32,6 @@ body{
 	width: 1190px;
 	height: 450px;
 	margin: 20px auto 0;
-	z-index: 1;
 }
 .carousel-control{
 	width: 5%;
@@ -181,3 +180,4 @@ body{
 	height: 260px;
 	margin: 0 auto;
 }
+

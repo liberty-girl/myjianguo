@@ -37,10 +37,11 @@ body{
     left: 0;
     top: 0;
 	bottom:0;
+	z-index:2;
+	display: none;
 	input{
-		z-index: 1;
-		width: 338px;
-		height: 43px;
+		width: 360px;
+		height: 45px;
 		padding: 0 10px;
 		line-height: 43px;
 		border: solid 1px #dadada;
@@ -62,10 +63,10 @@ body{
 }
 .registermain{
 	position: fixed;
-    z-index: 1;
+    z-index: 2;
 	top: 50%;
     left: 50%;
-	width: 360px;
+	// width: 360px;
     margin-left: -240px;
 	margin-top: -251px;
     padding: 30px 60px;
@@ -81,7 +82,7 @@ body{
 	    border: none;
 		cursor: pointer;
 	}
-	.jiancha{
+	.jiancha_r{
 		color: #f30909;
 		font-size: 14px;
 		display: none;
@@ -110,7 +111,7 @@ body{
     line-height: 22px;
     font-size: 18px;
 }
-.yzm{
+.yzm_r{
 	position: relative;
 	img{
 		position: absolute;
@@ -151,7 +152,7 @@ body{
 		}
 	} 
 }
-#agree{
+#agree_r{
 	display:inline-block;
 	width:18px;
 	height:18px;

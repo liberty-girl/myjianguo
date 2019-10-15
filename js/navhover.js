@@ -196,3 +196,12 @@ class Navhover{
 
 	}
 }
+
+
+$(".zhuyedenglu").click(function(){
+	$(".login").css("display","block");
+});
+
+$(".zhuyezhuce").click(function(){
+	$(".register").css("display","block");
+});

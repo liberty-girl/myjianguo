@@ -36,13 +36,14 @@ body{
     left: 0;
     top: 0;
 	bottom:0;
+	z-index:2;
+	display: none;
 }
 .loginmain{
     position: fixed;
     z-index: 1;
 	top: 50%;
     left: 50%;
-	width: 360px;
     margin-left: -240px;
 	margin-top: -251px;
     padding: 30px 60px;
@@ -54,8 +55,8 @@ body{
         input{
             position: relative;
             z-index: 1;
-            width: 338px;
-            height: 43px;
+            width: 360px;
+            height: 45px;
             padding: 0 10px;
             line-height: 43px;
             border: solid 1px #dadada;
@@ -151,12 +152,12 @@ body{
     padding: 10px 0 10px;
 }
 #agree{
-	display:inline-block;
+    display: inline-block;
 	width:18px;
 	height:18px;
 	text-align:center;
 	line-height:18px;
-	border: solid 1px #cf1d1b;
+    border:1px solid #bbb;
     background: transparent;
 	position:relative;
 	.icon-duihao{
@@ -165,7 +166,8 @@ body{
 		font-weight:bold;
 		position:absolute;
 		top:0px;
-		left:-4px;
+        left:-4px;
+        display: none;
 	}
 }
 .login_bottom{
