@@ -64,12 +64,73 @@ body{
 	margin-right: 15px;
 }
 .header_middle a{
+	float: left;
 	padding: 0 12px;
 }
 .header_middle span{
+	float: left;
 	font-size: 12px;
 	color: #393F3F;
 }
+.header_middle .people{
+	position: relative;
+}
+.header_middle .people:hover{
+	color: #B0B0B0;
+} 
+.header_middle b{
+	float: left;
+	padding: 0 12px;
+	font-weight: normal;
+}
+.people .icon-grzx{
+	font-size: 18px;
+	font-weight: bold;
+	color: #B0B0B0;
+}
+.people{
+	color: #B0B0B0;
+	float: left;
+	font-size: 14px;
+	position: relative;
+	display: none;
+}
+.people1{
+	font-size: 12px;
+}
+.people .people_hover{
+	width: 100px;
+	z-index:2;
+	position: absolute;
+	top:36px;
+	left:-120px;
+    padding: 5px;
+	float: left;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 3px 12px rgba(27, 31, 35, 0.15);
+}
+.people_hover a{
+	color: #333;
+	font-size: 14px;
+	line-height: 30px;
+    padding: 0 10px;
+}
+.people_hover a:hover{
+	color: #333;
+}
+.people .sanjiao{
+	width: 0;
+	height: 0;
+	border:7px solid transparent;
+	border-bottom-color:#fff;
+	position: absolute;
+	top:23px;
+	left:-112px;
+	z-index:4;
+} 
 .header_right{
 	width: 120px;
 	height: 40px;
@@ -77,13 +138,85 @@ body{
 	line-height: 40px;
 	float: right;
 	background: #424242;
+	position: relative;
 }
-.header_right span{
+.header_right a{
+	width: 100%;
+	display: inline-block;
+}
+.header_right a span{
 	float: left;
 }
 .header_right .icon-gwc{
 	font-size: 30px;
 	margin-left: 11px;
+	background: pink;
+}
+.gwc{
+	background: yellow;
+}
+.goods_num{
+	background: skyblue;
+}
+.car_buy{
+	position: absolute;
+    z-index: 1;
+    top: 40px;
+    right: 0;
+    width: 300px;
+    background: #fff;
+	box-shadow: 0 0 15px rgba(0,0,5,0.5);
+	display: none;
+}
+.car_buy ul li{
+	padding: 20px;
+	border-bottom: 1px solid #eee;
+}
+.car_buy ul a{
+	color: #333;
+}
+.car_buy ul a:hover{
+	color: #cf1d1b;
+}
+.car_js{
+	background: #eee;
+    padding: 15px;
+	overflow: hidden;
+	font-size: 12px;
+	display: none;
+}
+.car_js span{
+	clear:both;
+}
+
+.l{
+	float:left;
+}
+.car_jj{
+	color: #999;
+    line-height: 20px;
+}
+.goods_price{
+	color: #cf1d1b;
+	line-height: 23px;
+	margin: -2px 0;
+	font-size: 16px;
+	display: block;
+	font-style: normal;
+}
+.car_js .js_btn{
+	background: #cf1d1b;
+	color: #fff;
+	margin-top: 5px;
+	line-height: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 3px;
+    width: 133px;
+    padding: 1px;
+    text-align: center;
+    font-size: 16px;
+	cursor: pointer;
 }
 
 /*nav*/

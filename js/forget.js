@@ -47,5 +47,17 @@ function check(){
         $(".error1_wj").html("您填写的不是邮箱或者手机号码");
         $(".error1_wj").css("display","block");
         return false;
+    }else{
+        var par1 = {"phone":str1};
+        $.post("loginCheck.php",par,function($result){
+			// if($result=="1"){
+			// 	location.href="index.html";
+            // }
+            if($result=="0"){
+				$(".jiancha").html("登录失败，账号名或密码错误");
+                $(".jiancha").css("display","block");
+                return false;
+			}
+	    });
     }
 }

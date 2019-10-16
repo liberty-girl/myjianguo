@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>首页</title>
+		<link rel="stylesheet" href="css/iconfont.css">
 		<link rel="stylesheet" href="css/header.css"/>
 	</head>
 	<body>
@@ -16,14 +17,43 @@
 					<a href="#">坚果论坛</a>
 				</div>
 				<div class="header_right">
-					<a href="#">
+					<a href="#" class="gwc_ho">
 						<span class="iconfont icon-gwc"></span>
-						<span>购物车</span><span>（0）</span>
+						<span class="gwc">购物车</span><span class="goods_num">（0）</span>
 					</a>
+					<div class="car_buy">
+						<ul>
+							<li><a href="#">您的购物车是空的，快去挑选喜欢的商品吧！</a></li>
+						</ul>
+						<div class="car_js">
+							<div class="l">
+								<div class="car_jj">
+									共<span id="carTotalNumber">1</span>件商品
+									<em class="goods_price">
+										<span id="goodsTotalPrice">1799.0</span>元
+									</em>
+								</div>
+							</div>
+							<a href="#" class="js_btn">去结算</a>
+						</div>
+					</div>
 				</div>
 				<div class="header_middle">
-					<a href="#" class="zhuyedenglu">登录</a><span>|</span>
-					<a href="#" class="zhuyezhuce">注册</a><span>|</span>
+					<div class="hm_t">
+						<a href="#" class="zhuyedenglu">登录</a><span>|</span>
+						<a href="#" class="zhuyezhuce">注册</a><span>|</span>
+					</div>
+					<div class="people people1">
+						<span class="iconfont icon-grzx"></span><b>Trust</b><span>|</span>
+					</div>
+					<div class="people people2">
+						<div class="people_hover">
+							<p><a href="#">个人中心</a></p>
+							<p><a href="#">我的订单</a></p>
+							<p class="tuichu"><a href="#">退出登录</a></p>
+						</div>
+						<span class="sanjiao"></span>
+					</div>
 					<a href="#">English</a>
 				</div>
 			</div>
@@ -84,7 +114,7 @@
 <script src="js/register.js"></script>
 <script>
 	$(document).ready(function(){
-	$("#loginyin").load("login.html");
+		$("#loginyin").load("login.html");
 		$("#registeryin").load("register.html");
 		let h0 = new Navhover(
 			$(".navhover")[0],
@@ -131,5 +161,6 @@
 				price:["1899.00元","4599.00元","4399.00元","2848.00元","5999.00元","3999.00元"]
 			}
 		);
+		showUser();
 	});
 </script>

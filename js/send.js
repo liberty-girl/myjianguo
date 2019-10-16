@@ -18,7 +18,7 @@ function sendyzm(obj,get_num,xainshi,count1){
 				xainshi.html("验证码发送失败，请重新发送");
 				xainshi.css("display","block");
 				return -1;
-			}
+			},
 		});
 		setTime(obj,count1);
 	}
@@ -26,14 +26,14 @@ function sendyzm(obj,get_num,xainshi,count1){
 
 function setTime(obj,count1){
 	if(count1==0){
-		obj.prop("disabled",true);
+		obj.prop("disabled","true");
 		obj.text("获取短信验证码");
-		count1 = 59;
+		count1 = count1;
 		return;
 	}else{
-		obj.prop("disabled",true);
+		obj.prop("disabled","true");
 		obj.text(""+count1+"s后重新发送");
 		count1--;
 	}
-	setTimeout(function(){setTime(obj)},1000);
+	setTimeout(function(){setTime(obj,count1)},1000);
 }

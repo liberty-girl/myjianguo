@@ -205,3 +205,85 @@ $(".zhuyedenglu").click(function(){
 $(".zhuyezhuce").click(function(){
 	$(".register").css("display","block");
 });
+
+function showUser(){
+	let phonenum = getCookie("phonenum");
+	if(phonenum!=null){
+		$(".hm_t").css("display","none");
+		$(".people1").css("display","block");
+		$(".people b").html(phonenum);
+	}else{
+		$(".hm_t").css("display","block");
+		$(".people1").css("display","none");
+	}
+}
+
+$(".people1").mouseover(function(){
+	$(".people2").css("display","block");
+});
+$(".people1").mouseout(function(){
+	$(".people2").css("display","none");
+	myTimer=setTimeout(function(){
+		$(this).show();
+		clearInterval(myTimer);
+	},10);
+});
+
+$(".people2").mouseenter(function(){	
+	clearInterval(myTimer);
+	$(this).show();	
+});
+
+$(".people2").mouseleave(function(){
+	$(this).hide();	
+})
+
+$(".tuichu").click(function(){
+	removeCookie("phonenum");
+	showUser();
+});
+
+let myTimer = 0;
+// $(".header_right").mouseover(function(event){
+// 	if($(".people1").attr("display","block")){
+// 		$(this).css({background:"#fff",color:"#333"});
+// 		$(".car_buy").css("display","block");
+// 	}
+// });
+
+// $(".header_right").mouseout(function(event){
+// 	if($(".people1").attr("display","block")){
+// 		myTimer=setTimeout(function(){
+// 			console.log("1")
+// 			$(".gwc_ho").css({background:"#424242",color:"#757575"});
+// 			$(".car_buy").css("display","none");
+// 		},10);
+// 	}
+// });
+
+$(".header_right span").on("span","mouseover",function(){
+	if($(".people1").attr("display","block")){
+		console.log("0");
+		$(".gwc_ho").css({background:"#fff",color:"#333"});
+		$(".car_buy").css("display","block");
+	}
+});
+
+$(".header_right span").on("span","mouseout",function(){
+	if($(".people1").attr("display","block")){
+		myTimer=setTimeout(function(){
+			console.log("1")
+			$(".gwc_ho").css({background:"#424242",color:"#757575"});
+			$(".car_buy").css("display","none");
+		},10);
+	}
+});
+
+$(".car_buy").mouseover(function(){	
+	clearInterval(myTimer);
+	$(this).show();	
+});
+
+$(".car_buy").mouseout(function(){
+	$(this).hide();	
+})

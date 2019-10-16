@@ -64,8 +64,8 @@ $(".zhuce").click(function(){
 					$(".jiancha_r").html("注册失败");
 					$(".jiancha_r").css("display","block");
 				}else if(xhr.responseText=="1"){
-					$(".jiancha_r").html("注册成功请<a href='login.html'>登录</a>");
-					$(".jiancha_r").css("display","block");
+					location.href="index.html";
+					addCookie("phonenum",str11,7);//键，值，保存时间
 				}
 			}
 		}

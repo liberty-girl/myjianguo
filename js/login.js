@@ -90,8 +90,12 @@ $(".logina").click(function(){
 			if($result=="1"){
 				if(count%2==0){
 					addCookie("phonenum",$("#phonenum")[0].value,7);//键，值，保存时间
+					location.href="index.html";
+				}else{
+					addCookie("phonenum",$("#phonenum")[0].value);//键，值，保存时间
+					location.href="index.html";
 				}
-				location.href="index.html";
+				
 			}else{
 				$(".jiancha").html("登录失败，账号名或密码错误");
 				$(".jiancha").css("display","block");
@@ -107,6 +111,6 @@ $(".sendyzm").click(function(){
 		$(this).prev().css("border-color","red");
 	}else{
 		$(this).prev().css("border-color","#dadada");
-		sendyzm($(".sendyzm"),$("#phonenum1"),$(".jiancha"),59);
+		sendyzm($(".sendyzm"),$("#phonenum1"),$(".jiancha"),$(".sendyzm"),59);
 	}
 });
