@@ -216,17 +216,3 @@ class Banner{
         }
     }
 }
-
-
-// window.onload = function(){
-//     new Banner(
-//         $("#lunbo"),
-//         {
-//             imgs:["img/lunbo1.jpg","img/lunbo2.jpg","img/lunbo3.jpg","img/lunbo4.jpg","img/lunbo5.jpg"],
-//             as:["http://www.baidu.com","http://www.weibo.com","http://www.jc2006.com/","http://www.bshare.cn/","https://gitee.com/"],
-//             douSize:10,
-//             douColor:"#ccc",
-//             douHighColor:"#fff"
-//         }
-//     );
-// }

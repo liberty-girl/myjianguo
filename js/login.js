@@ -50,7 +50,7 @@ $(".logina").click(function(){
 	// //1.创建对象
 	// let xhr = new XMLHttpRequest();
 	// //2.设置请求参数
-	// xhr.open("post","loginCheck.php",true);
+	// xhr.open("post","php/loginCheck.php",true);
 	// //3.设置回调函数
 	// xhr.onreadystatechange = function(){
 	// 	if(xhr.readyState==4 && xhr.status==200){
@@ -71,7 +71,7 @@ $(".logina").click(function(){
 
 
 	// $.ajax({
-	//   url: "loginCheck.php",
+	//   url: "php/loginCheck.php",
 	//   type:"post",
 	//   data: `phonenum=${$("#phonenum")[0].value}&pass=${$("#mima1")[0].value}`,
 	//   success: function($result){
@@ -86,7 +86,7 @@ $(".logina").click(function(){
 	// });
 
 	var par = `phonenum=${$("#phonenum")[0].value}&pass=${$("#mima1")[0].value}`;
-	$.post("loginCheck.php",par,function($result){
+	$.post("php/loginCheck.php",par,function($result){
 			if($result=="1"){
 				if(count%2==0){
 					addCookie("phonenum",$("#phonenum")[0].value,7);//键，值，保存时间

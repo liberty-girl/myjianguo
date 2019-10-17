@@ -12,7 +12,7 @@
 	<div id="headeryin">
 	</div>
 	<!-- 轮播图 -->
-	<div id="lunbo">
+	<div id="lunboyin">
 	</div>
 	<!-- 激光电视 -->
 	<div class="jgtv">
@@ -57,17 +57,9 @@
 
 $(document).ready(function(){
 	$("#headeryin").load("header.html");
+	$("#lunboyin").load("banner.html");
 	$("#footeryin").load("footer.html");
-	new Banner(
-        $("#lunbo")[0],
-        {
-            imgs:["img/lunbo1.jpg","img/lunbo2.jpg","img/lunbo3.jpg","img/lunbo4.jpg","img/lunbo5.jpg"],
-            as:["http://www.baidu.com","http://www.weibo.com","http://www.jc2006.com/","http://www.bshare.cn/","https://gitee.com/"],
-            douSize:10,
-            douColor:"#ccc",
-            douHighColor:"#fff"
-        }
-    );
+	
 	let ul1 = new UlMain(
 		$(".jgtvmain")[0],
 		{

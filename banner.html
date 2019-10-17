@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <style>
+        /* 轮播图*/
+        #lunbo{
+            position: relative;
+            width: 1190px;
+            height: 450px;
+            margin: 20px auto 0;
+        }
+        .carousel-control{
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 轮播图 -->
+	<div id="lunbo">
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/banner02.js" ></script>
+<script src="js/move1908.js" ></script>
+<script>
+    $(document).ready(function(){
+        new Banner(
+            $("#lunbo")[0],
+            {
+                imgs:["img/lunbo1.jpg","img/lunbo2.jpg","img/lunbo3.jpg","img/lunbo4.jpg","img/lunbo5.jpg"],
+                as:["http://www.baidu.com","http://www.weibo.com","http://www.jc2006.com/","http://www.bshare.cn/","https://gitee.com/"],
+                douSize:10,
+                douColor:"#ccc",
+                douHighColor:"#fff"
+            }
+        );
+    });
+</script>

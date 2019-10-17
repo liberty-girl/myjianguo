@@ -25,19 +25,6 @@ body{
 }
 
 
-
-/* 轮播图*/
-#lunbo{
-    position: relative;
-	width: 1190px;
-	height: 450px;
-	margin: 20px auto 0;
-}
-.carousel-control{
-	width: 5%;
-}
-
-
 /*公共标题*/
 #biaoti{
 	width: 100%;

@@ -48,7 +48,7 @@ gulp.task("watchall",async ()=>{
 			.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo\\css"));
 		});
 
-		gulp.watch("*.php",async ()=>{
+		gulp.watch("php/*.php",async ()=>{
 			gulp.src("*.php")
 			.pipe(gulp.dest("D:\\phpStudy\\WWW\\myjianguo"));
 		});

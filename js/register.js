@@ -53,7 +53,7 @@ $(".zhuce").click(function(){
 	}else{
 		let xhr = new XMLHttpRequest();
 
-		xhr.open("post","regSave.php",true);
+		xhr.open("post","php/regSave.php",true);
 
 		xhr.onreadystatechange = function(){
 			if(xhr.readyState==4 && xhr.status==200){

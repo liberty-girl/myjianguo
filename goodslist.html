@@ -5,8 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商品详情页</title>
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/goodslist.css">
 </head>
 <body>
-    
+    <!-- header -->
+	<div id="headeryin">
+    </div>
+
+    <!-- goods_nav -->
+    <div class="goods_nav">
+        <div class="goods_navmain">
+            <span>分类：</span>
+            <ul>
+                <li class="active">全部</li>
+                <li>投影仪</li>
+                <li>移动影院</li>
+                <li>家庭影院</li>
+                <li>激光电视</li>
+                <li>行业定制</li>
+                <li>配件中心</li>
+                <li>幕布</li>
+                <li>其它</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- good_list -->
+    <div class="goods">
+        <div class="good_list">
+            <div class="goods_listTop">
+                <div class="glt_left">
+                    <span>人气</span>|
+                    <span>新品</span>|
+                    <span>销量</span>|
+                    <span>价格</span>|
+                </div>
+                <div class="glt_right">
+                    <p>
+                        <label for="">
+                            <input type="checkbox">
+                            <span>仅显示特惠商品</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="">
+                            <input type="checkbox">
+                            <span>仅显示有货商品</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <ul class="goodslist">
+            </ul>
+        </div>
+    </div>
+        
+    <!-- footer -->
+	<div id="footeryin">
+    </div>
 </body>
 </html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/navhover.js"></script>
+<script src="js/goodslist.js"></script>
+<script>
+$(document).ready(function(){
+    $("#headeryin").load("header.html");
+	$("#footeryin").load("footer.html");
+});
+</script>

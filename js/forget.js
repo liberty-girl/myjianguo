@@ -49,7 +49,7 @@ function check(){
         return false;
     }else{
         var par1 = {"phone":str1};
-        $.post("loginCheck.php",par1,function($result){
+        $.post("php/loginCheck.php",par1,function($result){
 			// if($result=="1"){
 			// 	location.href="index.html";
             // }
