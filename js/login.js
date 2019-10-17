@@ -114,3 +114,7 @@ $(".sendyzm").click(function(){
 		sendyzm($(".sendyzm"),$("#phonenum1"),$(".jiancha"),$(".sendyzm"),59);
 	}
 });
+
+$(".forget").click(function(){
+	location.href="forget.html";
+});

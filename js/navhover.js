@@ -206,8 +206,9 @@ $(".zhuyezhuce").click(function(){
 	$(".register").css("display","block");
 });
 
+let phonenum;
 function showUser(){
-	let phonenum = getCookie("phonenum");
+	phonenum = getCookie("phonenum")
 	if(phonenum!=null){
 		$(".hm_t").css("display","none");
 		$(".people1").css("display","block");
@@ -240,50 +241,22 @@ $(".people2").mouseleave(function(){
 
 $(".tuichu").click(function(){
 	removeCookie("phonenum");
-	showUser();
+	location.href="index.html";
 });
 
 let myTimer = 0;
-// $(".header_right").mouseover(function(event){
-// 	if($(".people1").attr("display","block")){
-// 		$(this).css({background:"#fff",color:"#333"});
-// 		$(".car_buy").css("display","block");
-// 	}
-// });
-
-// $(".header_right").mouseout(function(event){
-// 	if($(".people1").attr("display","block")){
-// 		myTimer=setTimeout(function(){
-// 			console.log("1")
-// 			$(".gwc_ho").css({background:"#424242",color:"#757575"});
-// 			$(".car_buy").css("display","none");
-// 		},10);
-// 	}
-// });
-
-$(".header_right span").on("span","mouseover",function(){
-	if($(".people1").attr("display","block")){
-		console.log("0");
+$(".header_right").hover(function(){
+	if(phonenum!=null){
 		$(".gwc_ho").css({background:"#fff",color:"#333"});
 		$(".car_buy").css("display","block");
+	}},
+	function(){
+		if(phonenum!=null){
+			myTimer=setTimeout(function(){
+				console.log("1")
+				$(".gwc_ho").css({background:"#424242",color:"#757575"});
+				$(".car_buy").css("display","none");
+			},10);
+		}
 	}
-});
-
-$(".header_right span").on("span","mouseout",function(){
-	if($(".people1").attr("display","block")){
-		myTimer=setTimeout(function(){
-			console.log("1")
-			$(".gwc_ho").css({background:"#424242",color:"#757575"});
-			$(".car_buy").css("display","none");
-		},10);
-	}
-});
-
-$(".car_buy").mouseover(function(){	
-	clearInterval(myTimer);
-	$(this).show();	
-});
-
-$(".car_buy").mouseout(function(){
-	$(this).hide();	
-})
+);

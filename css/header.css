@@ -150,13 +150,6 @@ body{
 .header_right .icon-gwc{
 	font-size: 30px;
 	margin-left: 11px;
-	background: pink;
-}
-.gwc{
-	background: yellow;
-}
-.goods_num{
-	background: skyblue;
 }
 .car_buy{
 	position: absolute;
