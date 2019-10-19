@@ -1,0 +1,32 @@
+.goods{
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.goods_top{
+    width: 1142px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.goods_imgs{
+    float: left;
+    width: 500px;
+    min-height: 600px;
+    margin-right: 25px;
+}
+.imgs_top{
+    img{
+        width: 500px;
+        height: 500px;
+    }
+}
+.imgs_bottom{
+    margin-left: 0px;
+    margin-top: 20px;
+    img{
+
+    }
+}

@@ -1,7 +1,9 @@
 <?php
 	header("Content-Type:text/html;charset=utf-8");
 	
-	$goodsId   = $_REQUEST['goodsId'];	
+	$goodsId   = $_REQUEST['goodsId'];
+	// $goodsId  = "222";
+
 	//2、数据保存在数据库中
 	//1）、建立连接（搭桥）
 	$conn = mysql_connect("localhost","root","root");

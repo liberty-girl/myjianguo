@@ -153,3 +153,8 @@ class UlMain{
 		
 	}
 }
+
+
+$(".more").click(function(){
+	location.href="goodslist.html";
+});

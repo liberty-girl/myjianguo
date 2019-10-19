@@ -115,6 +115,6 @@ $(".sendyzm").click(function(){
 	}
 });
 
-$(".forget").click(function(){
+$(".forget2").click(function(){
 	location.href="forget.html";
 });

@@ -260,3 +260,12 @@ $(".header_right").hover(function(){
 		}
 	}
 );
+
+let dianStr;
+//搜索框
+$(".btn-default").click(function(){
+	if($("#goods_name").val()!=""){
+		dianStr = $("#goods_name").val();
+		location.href="goodslist.html?id="+$("#goods_name").val();
+	}
+});
